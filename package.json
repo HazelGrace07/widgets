@@ -58,6 +58,7 @@
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "@babel/runtime": ">=7.17.0",
+    "@ethersproject/providers": "^5.7.2",
     "@fontsource/ibm-plex-mono": "^4.5.1",
     "@fontsource/inter": "^4.5.1",
     "@popperjs/core": "^2.4.4",
