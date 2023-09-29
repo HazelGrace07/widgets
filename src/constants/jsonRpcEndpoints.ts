@@ -95,4 +95,9 @@ export const JSON_RPC_FALLBACK_ENDPOINTS: Record<SupportedChainId, string[]> = {
     'https://1rpc.io/base',
     'https://base.meowrpc.com',
   ],
+
+  [SupportedChainId.SEPOLIA]: [
+    // "Safe" URLs
+    'https://ethereum-sepolia.blockpi.network/v1/rpc/public', // Tested
+  ],
 }

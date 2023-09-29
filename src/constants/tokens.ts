@@ -137,6 +137,15 @@ export const USDC_BASE = new Token(
   'USDC',
   'USD Coin'
 )
+
+export const USDC_SEPOLIA = new Token(
+  SupportedChainId.SEPOLIA,
+  '0xc424A6601EC76117903E236b81E080159a8457C8',
+  6,
+  'FUSDC',
+  'Fungify USDC'
+)
+
 export const USDC: { [chainId in SupportedChainId]: Token } = {
   [SupportedChainId.MAINNET]: USDC_MAINNET,
   [SupportedChainId.ARBITRUM_ONE]: USDC_ARBITRUM,
@@ -153,6 +162,7 @@ export const USDC: { [chainId in SupportedChainId]: Token } = {
   [SupportedChainId.ROPSTEN]: USDC_ROPSTEN,
   [SupportedChainId.BNB]: USDC_BNB_CHAIN,
   [SupportedChainId.BASE]: USDC_BASE,
+  [SupportedChainId.SEPOLIA]: USDC_SEPOLIA,
 }
 export const DAI_POLYGON = new Token(
   SupportedChainId.POLYGON,
