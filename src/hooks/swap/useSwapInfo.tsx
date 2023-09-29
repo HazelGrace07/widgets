@@ -182,7 +182,11 @@ export function SwapInfoProvider({ children }: PropsWithChildren) {
     if (swap === lastQuotedSwap.current) return
     if (swapInfo.trade.state === TradeState.VALID && swapInfo.trade.trade) {
       lastQuotedSwap.current = swap
-      onInitialSwapQuote?.(swapInfo.trade.trade)
+      try {
+        onInitialSwapQuote?.(swapInfo.trade.trade)
+      } catch (error) {
+        console.log(error)
+      }
     }
   }, [onInitialSwapQuote, swap, swapInfo.trade.state, swapInfo.trade.trade])
 

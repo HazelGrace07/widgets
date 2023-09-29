@@ -96,6 +96,7 @@ export default function SwapButton({ disabled }: { disabled: boolean }) {
         setOpen(false)
       }
     } catch (e) {
+      console.log(e)
       throwAsync(e)
     }
   }, [onSubmit, setOldestValidBlock, slippage.allowed, swapCallback, throwAsync, trade])

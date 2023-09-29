@@ -31,6 +31,7 @@ export const SWAP_ROUTER_ADDRESSES: AddressMap = {
   [SupportedChainId.CELO]: '0x5615CDAb10dc425a742d643d949a7F474C01abc4',
   [SupportedChainId.CELO_ALFAJORES]: '0x5615CDAb10dc425a742d643d949a7F474C01abc4',
   [SupportedChainId.BASE]: '0x2626664c2603336E57B271c5C0b26F421741e481',
+  
 }
 
 export const ARGENT_WALLET_DETECTOR_ADDRESS: AddressMap = {
