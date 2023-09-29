@@ -75,7 +75,7 @@ function Fixture() {
 
   const defaultNetwork = useOption('defaultChainId', {
     options: Object.keys(CHAIN_NAMES_TO_IDS),
-    defaultValue: 'mainnet',
+    defaultValue: 'sepolia',
   })
   const defaultChainId = defaultNetwork ? CHAIN_NAMES_TO_IDS[defaultNetwork] : undefined
 
