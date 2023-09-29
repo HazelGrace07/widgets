@@ -24,7 +24,7 @@ class UriSrc implements LogoSrc {
   getUri() {
     // Lazy-parse the address
     if (this.parsedUri === null) {
-      console.log('unparsedUri')
+      console.log('unparsedUri', this.unparsedUri)
       ;[this.parsedUri, this.alternateUri] = uriToHttp(this.unparsedUri)
     }
     return this.parsedUri
