@@ -10,8 +10,10 @@ export default function useHttpLocations(uri: string | undefined): string[] {
   const resolvedContentHash = useENSContentHash(ens?.ensName)
   return useMemo(() => {
     if (ens) {
+      console.log('resolvedContentHash.contenthash: ', resolvedContentHash.contenthash)
       return resolvedContentHash.contenthash ? uriToHttp(contenthashToUri(resolvedContentHash.contenthash)) : []
     } else {
+      console.log('uri: ', uri)
       return uri ? uriToHttp(uri) : []
     }
   }, [ens, resolvedContentHash.contenthash, uri])

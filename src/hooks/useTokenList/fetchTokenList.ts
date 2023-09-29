@@ -36,8 +36,10 @@ export default async function fetchTokenList(
       console.debug(message, error)
       throw new Error(message)
     }
+    console.log(`Line 39 ${translatedUri}${parsedENS.ensPath ?? ''}`)
     urls = uriToHttp(`${translatedUri}${parsedENS.ensPath ?? ''}`)
   } else {
+    console.log('listUrl: ', listUrl)
     urls = uriToHttp(listUrl)
   }
 
