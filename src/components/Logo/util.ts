@@ -8,7 +8,7 @@ import CeloLogo from '../../assets/svg/celo_logo.svg'
 import MaticLogo from '../../assets/svg/matic-token-icon.svg'
 import { LogoTableInput } from './LogoTable'
 
-type Network = 'ethereum' | 'arbitrum' | 'optimism' | 'polygon' | 'celo' | 'smartchain' | 'base' | 'sepolia'
+type Network = 'ethereum' | 'arbitrum' | 'optimism' | 'polygon' | 'celo' | 'smartchain' | 'base'
 
 function chainIdToNetworkName(networkId: SupportedChainId): Network | undefined {
   switch (networkId) {
@@ -26,8 +26,6 @@ function chainIdToNetworkName(networkId: SupportedChainId): Network | undefined 
       return 'smartchain'
     case SupportedChainId.BASE:
       return 'base'
-    case SupportedChainId.SEPOLIA:
-      return 'sepolia'
     default:
       return 'ethereum'
   }
@@ -58,8 +56,6 @@ export function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.MA
       return BnbLogo
     case SupportedChainId.BASE:
       return BaseLogo
-    case SupportedChainId.SEPOLIA:
-      return EthereumLogo
     default:
       return EthereumLogo
   }

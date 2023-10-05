@@ -140,10 +140,10 @@ export const USDC_BASE = new Token(
 
 export const USDC_SEPOLIA = new Token(
   SupportedChainId.SEPOLIA,
-  '0xc424A6601EC76117903E236b81E080159a8457C8',
+  '0x6f14C02Fc1F78322cFd7d707aB90f18baD3B54f5',
   6,
-  'FUSDC',
-  'Fungify USDC'
+  'USDC',
+  'USDC Token'
 )
 
 export const USDC: { [chainId in SupportedChainId]: Token } = {
@@ -158,11 +158,11 @@ export const USDC: { [chainId in SupportedChainId]: Token } = {
   [SupportedChainId.CELO_ALFAJORES]: USDC_CELO_ALFAJORES,
   [SupportedChainId.GOERLI]: USDC_GOERLI,
   [SupportedChainId.RINKEBY]: USDC_RINKEBY,
+  [SupportedChainId.SEPOLIA]: USDC_SEPOLIA,
   [SupportedChainId.KOVAN]: USDC_KOVAN,
   [SupportedChainId.ROPSTEN]: USDC_ROPSTEN,
   [SupportedChainId.BNB]: USDC_BNB_CHAIN,
   [SupportedChainId.BASE]: USDC_BASE,
-  [SupportedChainId.SEPOLIA]: USDC_SEPOLIA,
 }
 export const DAI_POLYGON = new Token(
   SupportedChainId.POLYGON,
@@ -461,7 +461,7 @@ export const UNI: { [chainId: number]: Token } = {
   [SupportedChainId.ROPSTEN]: new Token(SupportedChainId.ROPSTEN, UNI_ADDRESS[3], 18, 'UNI', 'Uniswap'),
   [SupportedChainId.GOERLI]: new Token(SupportedChainId.GOERLI, UNI_ADDRESS[5], 18, 'UNI', 'Uniswap'),
   [SupportedChainId.KOVAN]: new Token(SupportedChainId.KOVAN, UNI_ADDRESS[42], 18, 'UNI', 'Uniswap'),
-  [SupportedChainId.SEPOLIA]: new Token(SupportedChainId.KOVAN, UNI_ADDRESS[42], 18, 'UNI', 'Uniswap'),
+  [SupportedChainId.SEPOLIA]: new Token(SupportedChainId.SEPOLIA, UNI_ADDRESS[11155111], 18, 'UNI', 'Uniswap'),
 }
 
 export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } = {
